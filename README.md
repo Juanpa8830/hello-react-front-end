@@ -121,7 +121,9 @@ In the project directory, you can run the project by using following command:
 ```react
   npm start
 ```
+### Link to hello-rails-back-end repository:
 
+https://github.com/Juanpa8830/hello-rails-back-end
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
