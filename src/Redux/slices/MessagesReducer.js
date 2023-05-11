@@ -5,7 +5,7 @@ const GET_DATA = 'GET_DATA';
 const messagesUrl = 'http://localhost:3000/api/v1/messages';
 
 const MessagesReducer = (state = [], action) => {
-    switch (action.type) {
+  switch (action.type) {
     case `${GET_DATA}/fulfilled`:
       return action.payload;
     default:
@@ -15,9 +15,9 @@ const MessagesReducer = (state = [], action) => {
 
 export const getApiMessages = createAsyncThunk(GET_DATA,
   () => axios.get(messagesUrl).then((response) => {
-       const MessagesObj = response.data
-    
-      return MessagesObj;
+    const MessagesObj = response.data;
+
+    return MessagesObj;
   }));
 
 export default MessagesReducer;
